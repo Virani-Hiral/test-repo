@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        #myname {
+         font-style: inherit ;
+        }
+        </style>
+        </head>
+<body>
+<button id="myid" onclick="myFunction()">hide Me!</button>
+
+<p id="myname">
+virani hiral
+</p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myname");
+  var y = document.getElementById("myid");
+  
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    y.textContent = "hide me";
+  } 
+  else {
+    x.style.display = "none";
+    y.textContent = "show me";
+  }
+}
+</script>
+
+</body>
+</html>
